@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+            p,label,input,button{
+                font-family: Calibri;
+            }
+
+            div{
+
+                display: inline-block;
+            }
+
+           .box1{
+       
+            width: 400px;
+            height: 500px;
+            background-color:white;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;  
+            margin: auto;  
+            border:none;
+            border-radius: 8px;
+            box-shadow: 2px 2px rgba(112, 109, 109, 0.2);     
+           }
+
+           .p1{
+
+               font-weight: bold;
+               font-size: 25px;
+               width: 250px;
+               text-align: center;
+               padding-left: 80px;
+             
+           }
+
+           .inbox1{
+
+            position: absolute;
+            left: 150px;
+            top: 10px;
+            
+           }
+
+           .inbox2{
+
+              position: relative;
+              top: 60px;
+              left: 100px;
+              right: 100px;
+            
+
+           }
+
+           .inbox3{
+
+             position: relative;
+             top: 35px;
+             left: 50px;
+             
+           } 
+
+           .inbox4{
+
+position: relative;
+top: 35px;
+left: 50px;
+
+} 
+
+label,input,select{
+
+    display: block;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    
+
+}
+
+#cname,#Ind,#csize{
+
+    margin-bottom: 6px;
+}
+
+#cname-inp,#csize-inp{
+
+    margin-bottom: 10px;
+}
+
+#cname-inp{
+
+    padding-right: 200px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#csize-inp{
+
+    padding-right: 270px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+
+
+           #p1{
+            
+            font-family: ;
+            text-align: center;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-size: 25px;
+            font-weight: bolder;
+            color: rgb(0, 0, 0);
+            opacity: 0.8;
+           }
+
+           #p2{
+            
+            font-family: ;
+            text-align: center;
+            font-family: 'Edu NSW ACT Foundation', cursive;
+            font-size: 15px;
+            font-weight: bolder;
+            color: rgb(43, 98, 216);
+            opacity: 0.8;
+            font-style: ;
+           }
+
+
+
+
+.radio-toolbar{
+
+    display: inline-block;
+    margin-bottom:12px;
+}
+.inpradio{
+
+    border: initial;
+    vertical-align: middle;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.lbl1{
+
+    background-color : rgb(55, 102, 232);
+border-radius: 4px;
+box-sizing: border-box;
+color :rgb(240,240,240);
+cursor:pointer;
+display :inline-block;
+font-size: 14px;
+font-weight 500;
+height :32.4062px;
+line-height :16.41px;
+margin-bottom ;8px;
+margin-right: 5px;
+padding-bottom; 8px;
+padding-left :10px;
+padding-right :10px;
+padding-top: 8px;
+text-align :left;
+text-size-adjust :100%;
+}
+
+.lbl2,.lbl3,.lbl4{
+
+background-color : rgb(240, 240, 240);
+border-radius: 4px;
+box-sizing: border-box;
+color :rgb(52, 52, 52);
+cursor:pointer;
+display :inline-block;
+font-size: 14px;
+font-weight 500;
+height :32.4062px;
+line-height :16.41px;
+margin-bottom ;8px;
+margin-right: 5px;
+padding-bottom; 8px;
+padding-left :10px;
+padding-right :10px;
+padding-top: 8px;
+text-align :left;
+text-size-adjust :100%;
+}
+
+.inploc{
+
+    appearance auto;
+background-color :rgba(0, 0, 0, 0);
+
+border:0px none rgb(0, 0, 0) ;
+
+border-image-slice: 100%;
+box-sizing :border-box;
+color :rgb(0, 0, 0);
+cursor :pointer;
+display :block;
+font-family: Roboto, sans-serif;
+font-size :14px;
+font-weight: 400;
+height: 13px;
+position :fixed;
+text-align: start;
+text-indent :0px;
+text-rendering :auto;
+text-shadow: none;
+text-size-adjust :100%;
+text-transform: none;
+width: 0px;
+word-spacing: 0px;
+writing-mode :horizontal-tb;
+-webkit-rtl-ordering: logical;
+-webkit-tap-highlight-color :rgba(0, 0, 0, 0);
+-webkit-border-image: none;
+}
+
+.btn{
+
+    display: block;
+
+    padding: 5px 125px 5px 125px ;
+    background-color:  rgb(55, 102, 232);
+    border: none;
+    border-radius: 4px;
+    color: white;
+   
+}
+
+    </style>
+</head>
+<body background="wallpaperflare.com_wallpaper.jpg">
+    
+    <div class="box1">
+       
+       <div class="inbox1">
+        <img src="ico.png" alt="">
+       </div>
+
+       <div class="inbox2">
+        <p id="p1">
+            It's delight to have you <br><span>onboard<span>
+        </p>
+       </div>
+
+       <div class="inbox3">
+        <p id="p2">
+            Help us know you better.<br><span>(This is how we optimize Wobot as per your Business needs)<span>
+        </p>
+       </div>
+
+       <div class="inbox4">
+        <form action="">
+          
+            <label for="cname" id="cname">
+                Company Name
+            </label>
+            
+            <input type="text" name="cname" id="cname-inp" placeholder="e.g. Example Inc" >
+
+            <label for="Ind" id="Ind">
+
+                Industry
+            </label>
+
+            <select id="csize-inp" name="Ind"  >
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+              </select>
+
+              <label for="csize" id="csize">
+                Company size
+
+                
+
+            </label>
+
+            <div class="radio-toolbar">
+                
+                <input class="inploc" type="radio" id="radio1201" name="radiolocation" value="1-10"> 
+                <label class="lbl1" for="radio1201">1-10</label>
+                
+                <input class="inploc" type="radio" id="radio1201" name="radiolocation" value="1-10"> 
+                <label class="lbl2" for="radio1201">1-10</label>
+
+                <input class="inploc" type="radio" id="radio1201" name="radiolocation" value="1-10"> 
+                <label class="lbl3" for="radio1201">1-10</label>
+
+                <input class="inploc" type="radio" id="radio1201" name="radiolocation" value="1-10"> 
+                <label class="lbl4" for="radio1201">1-10</label>
+           
+            </div>
+
+
+            <button class="btn">
+              Get Started
+            </button>
+             
+            
+        </form>
+       </div>
+       
+        
+
+        
+        
+        
+      
+           
+    </div>
+  
+
+
+
+
+
+
+
+</body>
+</html>
